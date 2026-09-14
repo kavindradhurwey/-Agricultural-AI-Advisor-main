@@ -1,0 +1,213 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments - Exclude ALL virtual environments
+agri/
+modelenv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Streamlit
+.streamlit/
+.secrets.toml
+
+# Database
+*.db
+*.sqlite3
+*.sqlite
+chroma_db/
+data/
+*.db-journal
+
+# Logs
+*.log
+logs/
+*.log.*
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Testing
+.coverage
+.pytest_cache/
+htmlcov/
+.tox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Distribution
+*.tar.gz
+*.zip
+*.whl
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Cache
+.cache/
+.cache
+*.cache
+
+# Node.js (if any)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Docker
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# FastAPI (legacy files - to be removed)
+fastapi_app.py
+fastapi_requirements.txt
+static/
+templates/
+
+# Documentation builds
+docs/_build/
+site/
+
+# Profiling
+*.prof
+
+# Security
+*.key
+*.pem
+*.crt
+*.p12
+
+# Large files
+*.pdf
+*.mp4
+*.mp3
+*.zip
+*.tar
+
+# Streamlit cache
+.cache/
+.streamlit/cache/
+
+# Local development
+local_settings.py
+local_config.py
+
+# Backup files
+*~
+*.bak
+*.swp
+*.swo
+
+# Additional unnecessary files and folders for GitHub
+# Temporary and cache directories
+temp/
+cache/
+.local/
+uploads/
+backups/
+bg_images/
+attached_assets/
+urea_plant/
+
+# Development and testing files
+test_*.py
+debug_*.py
+verify_*.py
+check_*.py
+run_demo.py
+container-start.py
+create_default_user.py
+fast_startup.py
+start_*.py
+
+# Documentation and markdown files (keep only essential ones)
+*.md
+!README.md
+!FEATURES.md
+markdown_folder/
+
+# Configuration files with potential secrets
+config/
+docker_config/
+
+# Large model files
+*.h5
+*.pkl
+*.joblib
+*.model
+
+# Lock files
+*.lock
+uv.lock
+
+# Specific project files not needed for deployment
+=9.0.0
+cursor.md
+windsurf.md
+replit.md
+*.html
+!templates/*.html
+
+# Docker files (keep only essential ones)
+dockerfile.*
+!dockerfile.prod
+docker-compose.*.yml
+!docker-compose.yml
+docker-start.*
+docker-scripts.sh
+dockerignore.txt

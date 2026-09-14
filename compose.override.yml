@@ -1,0 +1,23 @@
+# Development override for compose.yml
+version: '3.8'
+
+services:
+  agri-dev:
+    build:
+      dockerfile: dockerfile.dev
+    volumes:
+      - .:/app:cached
+      - dev_cache:/root/.cache
+    environment:
+      - DEBUG=true
+      - RELOAD=true
+    ports:
+      - "8888:8888"  # Jupyter notebook
+    command: >
+      bash -c "
+        echo 'Starting development environment...' &&
+        streamlit run app.py --server.port=8501 --server.address=0.0.0.0
+      "
+
+volumes:
+  dev_cache:
